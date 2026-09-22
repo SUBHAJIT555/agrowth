@@ -99,7 +99,7 @@ export function CampaignInfrastructure() {
                         className="annotation-box"
                         style={{ animationDelay: `${0.1 + index * 0.7}s` }}
                       >
-                        <p className="annotation-title">Protected by AGrowth</p>
+                        <p className="annotation-title">Protected by Agent Mart AI</p>
                         <p className="annotation-desc">{row.desc}</p>
                       </div>
                     </>

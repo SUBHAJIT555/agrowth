@@ -17,7 +17,7 @@ export function PlatformCta() {
             <h2 className="agrowth-cta__title">Ready to Take Full Control of You Ad Budget ?</h2>
             <div className="agrowth-cta__desc">
               <p>
-                Join hundreds of media buyers and agencies already using AGrowth Platform to scale faster without the manual work slowing them down
+                Join hundreds of media buyers and agencies already using Agent Mart Platform to scale faster without the manual work slowing them down
               </p>
             </div>
           </div>

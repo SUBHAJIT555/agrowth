@@ -5,7 +5,7 @@ import { CaretDownIcon } from "@/components/meta-ads/icons";
 
 const faqs = [
   {
-    question: "1. How much does it cost to rent Facebook agency account solutions from AGrowth?",
+    question: "1. How much does it cost to rent Facebook agency account solutions from Agent Mart AI?",
     answer:
       "There is no opening fee. The service fee depends on your spend level. Rates start from a competitive percentage of top-up volume, with special rates available for higher-spending accounts. Contact our team for a quote based on your monthly ad spend.\n\nAccepted payment methods: Payoneer, Wise, Cryptocurrency, and Local Bank transfer.",
   },
@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "3. How does the Auto Top-up feature work?",
     answer:
-      "Auto top-up is a feature in the AGrowth platform that fully automated, self-service solution that gives you 100% control over your ad budget with zero middlemen.\nYou can instantly transfer funds from your AGrowth wallet directly to your Meta ad accounts 24/7, even on weekends and holidays. This streamlined process eliminates tedious waiting times, prevents campaign downtime, and keeps your ads running seamlessly around the clock.",
+      "Auto top-up is a feature in the Agent Mart AI platform that fully automated, self-service solution that gives you 100% control over your ad budget with zero middlemen.\nYou can instantly transfer funds from your Agent Mart wallet directly to your Meta ad accounts 24/7, even on weekends and holidays. This streamlined process eliminates tedious waiting times, prevents campaign downtime, and keeps your ads running seamlessly around the clock.",
   },
 ];
 

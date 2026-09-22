@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { site } from "@/config/site";
 
 export function ContactMethods() {
   return (
@@ -17,7 +18,7 @@ export function ContactMethods() {
             </div>
             <div className="heading">
               <b>Our Email</b>
-              <a href="mailto:sales@agrowth.io">sales@agrowth.io</a>
+              <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
             </div>
           </div>
         </div>

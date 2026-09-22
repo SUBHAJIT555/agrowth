@@ -2,11 +2,11 @@ export function PaymentMethodsPolicyContent() {
   return (
     <>
       <h1 className="ag-policy-title">
-        <strong>AGrowth Agency – Payment Methods Policy</strong>
+        <strong>Agent Mart AI – Payment Methods Policy</strong>
       </h1>
       <div className="ag-policy-body">
         <p>
-          <strong>AGrowth Agency</strong> (“we”, “us”, or “our”) offers pre-built
+          <strong>Agent Mart AI</strong> (“we”, “us”, or “our”) offers pre-built
           advertising accounts on various platforms available for rental. This Payment
           Methods Policy outlines your payment choices and the associated terms.&nbsp;
         </p>
@@ -104,7 +104,7 @@ export function PaymentMethodsPolicyContent() {
         <p>
           For questions regarding this Payment Methods Policy, please reach out to us
           at&nbsp;
-          <a href="mailto:sales@agrowth.io">sales@agrowth.io</a>
+          <a href="mailto:info@agentmart-ai.com">info@agentmart-ai.com</a>
           &nbsp;or visit our website for more details.
         </p>
       </div>

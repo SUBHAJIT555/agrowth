@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon, ShieldCheckIcon } from "@/components/home/icons";
+import { BrandMark } from "@/components/ui/Logo";
 
 const features = [
   "Instant Replacements",
@@ -70,12 +70,11 @@ export function HomeHero() {
           <path d="M0 120 L0 112 Q 700 15 1400 112 L 1400 120 Z" fill="#ffffff" />
         </svg>
         <div className="floating-logo-badge">
-          <Image
-            src="/assets/images/home/hero-logo-badge.png"
-            alt="Logo"
-            width={42}
-            height={42}
+          <BrandMark
+            tone="color"
+            title="Agent Mart AI"
             className="logo-svg"
+            style={{ width: 42, height: 42 }}
           />
         </div>
       </div>

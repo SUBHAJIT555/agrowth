@@ -6,8 +6,8 @@ export const schaedelsucht: CaseStudyDetail = {
   title: "Schaedelsucht",
   metaTitle: "Schaedelsucht",
   description:
-    "Transforming Schaedelsucht’s Meta Ads performance by stabilizing campaigns, reducing costs, and unlocking 51% higher sales growth with AGrowth.",
-  lead: "Transforming Schaedelsucht’s Meta Ads performance by stabilizing campaigns, reducing costs, and unlocking 51% higher sales growth with AGrowth.",
+    "Transforming Schaedelsucht’s Meta Ads performance by stabilizing campaigns, reducing costs, and unlocking 51% higher sales growth with Agent Mart AI.",
+  lead: "Transforming Schaedelsucht’s Meta Ads performance by stabilizing campaigns, reducing costs, and unlocking 51% higher sales growth with Agent Mart AI.",
   heroBg: "#e87438",
   heroImage: {
     src: "/assets/images/case-study/schaedelsucht.png",
@@ -18,7 +18,7 @@ export const schaedelsucht: CaseStudyDetail = {
   service: "Meta Agency Ad Account",
   challenge: (
     <>
-      <p>Before AGrowth, Schaedelsucht struggled with several bottlenecks that stunted growth:</p>
+      <p>Before Agent Mart AI, Schaedelsucht struggled with several bottlenecks that stunted growth:</p>
       <ul>
         <li>Ad rejections: Their unique, dark-themed creatives were often flagged by Meta&apos;s automated systems.</li>
         <li>Worthless traffic: Click farms inflated traffic, but with little to no purchase intent.</li>
@@ -37,9 +37,9 @@ export const schaedelsucht: CaseStudyDetail = {
   solution: (
     <>
       <p>
-        AGrowth stepped in not just as a provider, but as a growth partner. By supplying agency-level Meta ad accounts, Schaedelsucht gained the stability and trust they needed to scale while keeping their unique brand identity intact.
+        Agent Mart AI stepped in not just as a provider, but as a growth partner. By supplying agency-level Meta ad accounts, Schaedelsucht gained the stability and trust they needed to scale while keeping their unique brand identity intact.
       </p>
-      <p>Here’s what AGrowth delivered:</p>
+      <p>Here’s what Agent Mart AI delivered:</p>
       <ul>
         <li>High-trust ad accounts with fewer restrictions, ensuring campaigns ran smoothly without constant rejections.</li>
         <li>Scalable daily spend, allowing the brand to increase budgets confidently and test at higher volumes.</li>
@@ -76,7 +76,7 @@ export const schaedelsucht: CaseStudyDetail = {
         <strong>About the Client</strong>
       </h2>
       <p>
-        <strong>Schaedelsucht</strong>, a unique e-commerce brand with a dark, distinctive style, was struggling to find its footing with Meta ads. Their powerful aesthetic was frequently misunderstood by the platform, leading to ad rejections, while technical issues resulted in wasted ad spend and a leaky sales funnel. After partnering with AGrowth, they transformed their advertising efforts, turning algorithmic challenges into a powerful growth engine.
+        <strong>Schaedelsucht</strong>, a unique e-commerce brand with a dark, distinctive style, was struggling to find its footing with Meta ads. Their powerful aesthetic was frequently misunderstood by the platform, leading to ad rejections, while technical issues resulted in wasted ad spend and a leaky sales funnel. After partnering with Agent Mart AI, they transformed their advertising efforts, turning algorithmic challenges into a powerful growth engine.
       </p>
       <ul>
         <li>
@@ -130,10 +130,10 @@ export const schaedelsucht: CaseStudyDetail = {
       </p>
       <p>
         👉 Join our channel:{" "}
-        <a href="https://t.me/agrowth_agency" rel="noopener" target="_blank">
-          t.me/agrowth_agency
+        <a href="mailto:info@agentmart-ai.com" rel="noopener" target="_blank">
+          info@agentmart-ai.com
         </a>{" "}
-        or reach out today to see how AGrowth can unlock your next stage of growth.
+        or reach out today to see how Agent Mart AI can unlock your next stage of growth.
       </p>
     </>
   ),

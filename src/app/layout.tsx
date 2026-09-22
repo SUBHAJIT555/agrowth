@@ -33,9 +33,12 @@ export const metadata: Metadata = {
   },
   description: site.description,
   applicationName: site.name,
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
-    siteName: "AGrowth.io",
+    siteName: site.name,
     title: site.title,
     description: site.description,
     url: site.url,
@@ -46,8 +49,20 @@ export const metadata: Metadata = {
     description: site.description,
   },
   icons: {
-    icon: "/assets/logos/agrowth-mark.png",
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: site.name,
+  legalName: site.legalName,
+  url: site.url,
+  email: site.contact.email,
+  logo: `${site.url}/assets/logos/agent-mart-logo.svg`,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -57,6 +72,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${outfit.variable} ${inter.variable} ${assistant.variable} h-full`}
     >
       <body className={`${outfit.className} flex min-h-full flex-col bg-background text-foreground`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <GsapProvider />
         <SiteShell>{children}</SiteShell>
       </body>

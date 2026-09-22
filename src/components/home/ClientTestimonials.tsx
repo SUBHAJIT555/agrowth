@@ -35,7 +35,7 @@ export function ClientTestimonials() {
                 <Stars />
                 <h3 className="review-title">Growth became predictable again</h3>
                 <p className="review-desc">
-                  We were constantly dealing with account restrictions and campaign interruptions. Since switching to AGrowth Agency Accounts, our ads have been running smoothly and scaling feels much more predictable. The difference has been night and day.
+                  We were constantly dealing with account restrictions and campaign interruptions. Since switching to Agent Mart AI Accounts, our ads have been running smoothly and scaling feels much more predictable. The difference has been night and day.
                 </p>
                 <div className="author-info">
                   <Image src="/assets/images/home/review-emily.png" alt="Emily Chen" className="author-avatar" width={56} height={56} />
@@ -63,7 +63,7 @@ export function ClientTestimonials() {
                   Trustpilot <span className="stars-row">★★★★★</span>
                 </div>
                 <Link
-                  href="https://www.trustpilot.com/review/agrowth.io"
+                  href="https://agentmart-ai.com"
                   className="theme-btn3"
                   target="_blank"
                   rel="noreferrer"
@@ -142,7 +142,7 @@ export function ClientTestimonials() {
                 <Stars />
               </div>
               <p className="review-desc">
-                I have been working with Alice for more than years, and she is really very responsive and helpful. Previously I ever engaged with other agencies, but their service was never as good as AGrowth Agency.
+                I have been working with Alice for more than years, and she is really very responsive and helpful. Previously I ever engaged with other agencies, but their service was never as good as Agent Mart AI.
               </p>
               <div className="author-info">
                 <Image src="/assets/images/home/review-robert.png" alt="Robert W." className="author-avatar" width={56} height={56} />

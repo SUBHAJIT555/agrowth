@@ -6,11 +6,11 @@ import { CaretDownIcon } from "@/components/google-ads/icons";
 const faqs = [
   {
     question: "1. What payment methods are supported?",
-    answer: "At AGrowth, we accept a variety of payment methods to make it convenient for our clients. You can pay using Payoneer, Wise, Cryptocurrencies, Bank Transfer.",
+    answer: "At Agent Mart AI, we accept a variety of payment methods to make it convenient for our clients. You can pay using Payoneer, Wise, Cryptocurrencies, Bank Transfer.",
   },
   {
     question: "2. How fast is the top-up process?",
-    answer: "With the AGrowth Auto Top-up Platform, you have 100% autonomy. Fund your wallet anytime and the balance will reflect in your account in minutes. No chat, no lengthy, no manual approvals.",
+    answer: "With the Agent Mart Auto Top-up Platform, you have 100% autonomy. Fund your wallet anytime and the balance will reflect in your account in minutes. No chat, no lengthy, no manual approvals.",
   },
   {
     question: "3. What happens to my balance if an account gets restricted?",
@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "4. Are there any hidden fees?",
-    answer: 'All fees (rental, top-up, or service) are displayed in real-time on the AGrowth Dashboard. What you see is exactly what you pay - no hidden "handling fees" or manual markups.',
+    answer: 'All fees (rental, top-up, or service) are displayed in real-time on the Agent Mart Dashboard. What you see is exactly what you pay - no hidden "handling fees" or manual markups.',
   },
 ];
 

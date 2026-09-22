@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@/components/home/icons";
 
@@ -53,12 +54,12 @@ export function PlatformOverview() {
           <div className="col-lg-7">
             <div className="ap-media">
               <div className="ap-video-wrap">
-                <iframe
-                  src="https://www.youtube.com/embed/uYbIlpFR6U8"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title="Manage Every Platform"
-                  loading="lazy"
+                <Image
+                  src="/assets/images/home/platform-overview.png"
+                  alt="Agent Mart dashboard for Meta, Google, and TikTok ad budgets"
+                  fill
+                  sizes="(max-width: 991px) 100vw, 58vw"
+                  style={{ objectFit: "cover" }}
                 />
               </div>
             </div>

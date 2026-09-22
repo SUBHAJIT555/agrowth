@@ -2,16 +2,16 @@ export function RefundPolicyContent() {
   return (
     <>
       <h1 className="ag-policy-title">
-        <strong>AGrowth Agency – Refund Policy</strong>
+        <strong>Agent Mart AI – Refund Policy</strong>
       </h1>
       <div className="ag-policy-body">
         <p>
           <br />
-          AGrowth’s refund policy is based on the refund conditions that we have agreed
+          Agent Mart AI’s refund policy is based on the refund conditions that we have agreed
           with our clients.
           <br />
           <strong>
-            Clients are responsible for paying all fees when using AGrowth’s services,
+            Clients are responsible for paying all fees when using Agent Mart AI’s services,
             regardless of whether their advertising campaign is successful or
             unsuccessful.&nbsp;
           </strong>
@@ -20,7 +20,7 @@ export function RefundPolicyContent() {
         <h2>
           <strong>1. Refund Conditions</strong>
         </h2>
-        <p>- Clients accept all AGrowth terms and pay all fees before onboarding.</p>
+        <p>- Clients accept all Agent Mart AI terms and pay all fees before onboarding.</p>
         <p>
           - Clients must provide complete and accurate information about the
           products/services they want to run ads on, including prohibited or restricted
@@ -39,7 +39,7 @@ export function RefundPolicyContent() {
           restrictions, unapproved campaigns, etc.
           <br />
           <strong>
-            During the use of the service, AGrowth has the right to terminate cooperation,
+            During the use of the service, Agent Mart AI has the right to terminate cooperation,
             cancel the contract and not refund any fees if it detects that the customer
             has unethical behavior or does not comply with the conditions agreed upon
             previously.

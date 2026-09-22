@@ -18,7 +18,7 @@ const services = [
     image: "/assets/images/services/meta-wordmark.png",
     width: 420,
     height: 200,
-    copy: "AGrowth Agency – With over 5 years of experience offering Facebook Agency Ads Accounts for ALL VERTICALS: POD, Dropship, Affiliate, Brands…",
+    copy: "Agent Mart AI – With over 5 years of experience offering Facebook Agency Ads Accounts for ALL VERTICALS: POD, Dropship, Affiliate, Brands…",
   },
   {
     name: "TikTok",
@@ -27,7 +27,7 @@ const services = [
     image: "/assets/images/services/tiktok-wordmark.png",
     width: 300,
     height: 140,
-    copy: "Frustrated by frequent TikTok bans? AGrowth is designed to help businesses scale smoothly, free from the threat of account bans.",
+    copy: "Frustrated by frequent TikTok bans? Agent Mart AI is designed to help businesses scale smoothly, free from the threat of account bans.",
   },
   {
     name: "Bing",
@@ -36,7 +36,7 @@ const services = [
     image: "/assets/images/services/bing-wordmark.png",
     width: 300,
     height: 140,
-    copy: "Ready to supercharge your Bing Ads campaigns? Take your ads campaign to a new level with Microsoft Bing Advertising from AGrowth Agency!",
+    copy: "Ready to supercharge your Bing Ads campaigns? Take your ads campaign to a new level with Microsoft Bing Advertising from Agent Mart AI!",
   },
 ] as const;
 

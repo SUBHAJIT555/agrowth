@@ -66,7 +66,7 @@ export function MetaHero() {
           <div className="hero-image-wrapper">
             <Image
               src="/assets/images/meta-ads/hero-visual.png"
-              alt="Facebook Ads Manager on AGrowth Agency"
+              alt="Facebook Ads Manager on Agent Mart AI"
               width={450}
               height={405}
               className="hero-right-img"

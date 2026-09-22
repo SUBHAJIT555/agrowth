@@ -2,7 +2,7 @@ export function PrivacyPolicyContent() {
   return (
     <>
       <h1 className="ag-policy-title">
-        <strong>AGrowth Policy</strong>
+        <strong>Agent Mart AI Policy</strong>
       </h1>
       <div className="ag-policy-body">
         <p>
@@ -73,7 +73,7 @@ export function PrivacyPolicyContent() {
           <br />
         </p>
         <p>
-          AGrowth will retain Your Personal Data only for as long as is necessary for the
+          Agent Mart AI will retain Your Personal Data only for as long as is necessary for the
           purposes set out in this Privacy Policy. We will retain and use Your Personal
           Data to the extent necessary to comply with our legal obligations (for example,
           if we are required to retain your data to comply with applicable laws), resolve
@@ -82,7 +82,7 @@ export function PrivacyPolicyContent() {
           <br />
         </p>
         <p>
-          AGrowth will also retain Usage Data for internal analysis purposes. Usage Data
+          Agent Mart AI will also retain Usage Data for internal analysis purposes. Usage Data
           is generally retained for a shorter period of time, except when this data is
           used to strengthen the security or to improve the functionality of Our Service,
           or We are legally obligated to retain this data for longer time periods.

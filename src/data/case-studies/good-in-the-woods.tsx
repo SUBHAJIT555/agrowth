@@ -6,8 +6,8 @@ export const goodInTheWoods: CaseStudyDetail = {
   title: "Good in the Woods",
   metaTitle: "Case Study - Good In The Woods",
   description:
-    "Using AGrowth's agency ad accounts to increase online sales, reach new customer segments, and improve return on ad spend (ROAS) throught more efficient campaigns.",
-  lead: "Using AGrowth's agency ad accounts to increase online sales, reach new customer segments, and improve return on ad spend (ROAS) throught more efficient campaigns.",
+    "Using Agent Mart AI's agency ad accounts to increase online sales, reach new customer segments, and improve return on ad spend (ROAS) throught more efficient campaigns.",
+  lead: "Using Agent Mart AI's agency ad accounts to increase online sales, reach new customer segments, and improve return on ad spend (ROAS) throught more efficient campaigns.",
   heroBg: "#e87438",
   heroImage: {
     src: "/assets/images/case-study/good-in-the-woods.png",
@@ -32,9 +32,9 @@ export const goodInTheWoods: CaseStudyDetail = {
   solution: (
     <>
       <p>
-        <strong>AGrowth</strong> stepped in not just as a provider, but as a growth partner. By offering agency-level Meta ad accounts, Good in the Woods gained access to a more stable, scalable advertising environment.
+        <strong>Agent Mart AI</strong> stepped in not just as a provider, but as a growth partner. By offering agency-level Meta ad accounts, Good in the Woods gained access to a more stable, scalable advertising environment.
       </p>
-      <p>Here’s what AGrowth delivered:</p>
+      <p>Here’s what Agent Mart AI delivered:</p>
       <ul>
         <li>High-trust ad accounts with increased daily limits, allowing larger and faster testing</li>
         <li>Zero restrictions, meaning no downtime for the brand’s campaigns</li>
@@ -47,22 +47,22 @@ export const goodInTheWoods: CaseStudyDetail = {
         width={997}
         height={471}
         align="center"
-        caption="Meta ad billing dashboard showing $4,869 spent – uninterrupted scaling with AGrowth account"
+        caption="Meta ad billing dashboard showing $4,869 spent – uninterrupted scaling with Agent Mart AI account"
       />
       <p>
         To support the rapid scale, Good in the Woods increased their ad spend - reaching nearly $5,000 in billing on Meta ads within the month.
       </p>
       <p>
-        With AGrowth’s agency account structure, there were no payment interruptions or spend limits, ensuring uninterrupted scaling momentum.
+        With Agent Mart AI’s agency account structure, there were no payment interruptions or spend limits, ensuring uninterrupted scaling momentum.
       </p>
-      <p>AGrowth also combined the right infrastructure with the right support:</p>
+      <p>Agent Mart AI also combined the right infrastructure with the right support:</p>
       <ul>
         <li>Technical flexibility through agency-level accounts</li>
         <li>Operational confidence from 1-on-1 support</li>
         <li>Performance insights to help scale what worked, faster</li>
       </ul>
       <p>
-        AGrowth didn’t just provide an account - we unlocked a new growth phase by solving the ad platform bottlenecks that most scaling brands face.
+        Agent Mart AI didn’t just provide an account - we unlocked a new growth phase by solving the ad platform bottlenecks that most scaling brands face.
       </p>
     </>
   ),
@@ -79,7 +79,7 @@ export const goodInTheWoods: CaseStudyDetail = {
         height={237}
       />
       <p>
-        With stable accounts and real-time feedback from AGrowth, the team confidently scaled their ad spend and launched new collections without fear of downtime.
+        With stable accounts and real-time feedback from Agent Mart AI, the team confidently scaled their ad spend and launched new collections without fear of downtime.
       </p>
       <CsImage
         src="/assets/images/case-studies/good-in-the-woods/woods-shopify-report.png"
@@ -91,14 +91,14 @@ export const goodInTheWoods: CaseStudyDetail = {
       <p className="cs-caption">
         Shopify sales report from April 2025 – performance lifted after switching to
         <br />
-        AGrowth ad accounts
+        Agent Mart AI ad accounts
       </p>
-      <p>This dashboard snapshot shows the clear uplift during the first full month of running ads through AGrowth’s system.</p>
+      <p>This dashboard snapshot shows the clear uplift during the first full month of running ads through Agent Mart AI’s system.</p>
       <h2>
         <strong>About the Client - Good in the Woods</strong>
       </h2>
       <p>
-        <strong>Good in the Woods</strong>, a bold and eco-conscious e-commerce fashion brand based in the U.S., was struggling to scale Meta ad campaigns due to daily spending limits, unstable performance, and frequent account restrictions. After partnering with AGrowth, they unlocked sustainable growth and impressive returns in just 30 days.
+        <strong>Good in the Woods</strong>, a bold and eco-conscious e-commerce fashion brand based in the U.S., was struggling to scale Meta ad campaigns due to daily spending limits, unstable performance, and frequent account restrictions. After partnering with Agent Mart AI, they unlocked sustainable growth and impressive returns in just 30 days.
       </p>
       <ul>
         <li>
@@ -119,11 +119,11 @@ export const goodInTheWoods: CaseStudyDetail = {
       </h2>
       <p>
         <em>
-          “AGrowth helped us break the ceiling. Their ad account worked flawlessly from Day 1, and the support team was sharp and responsive. It’s exactly what we needed to scale fast - without the daily Meta headaches.”
+          “Agent Mart AI helped us break the ceiling. Their ad account worked flawlessly from Day 1, and the support team was sharp and responsive. It’s exactly what we needed to scale fast - without the daily Meta headaches.”
         </em>
       </p>
       <p>— Marketing Manager, Good in the Woods</p>
-      <p>This feedback reflects the peace of mind AGrowth brings - through both technical tools and human partnership.</p>
+      <p>This feedback reflects the peace of mind Agent Mart AI brings - through both technical tools and human partnership.</p>
       <h2>
         <strong>Why This Worked</strong>
       </h2>
@@ -134,7 +134,7 @@ export const goodInTheWoods: CaseStudyDetail = {
         <li>Performance insights to help scale what worked, faster</li>
       </ul>
       <p>
-        AGrowth didn’t just provide an account - we unlocked a new growth phase by solving the ad platform bottlenecks that most scaling brands face.
+        Agent Mart AI didn’t just provide an account - we unlocked a new growth phase by solving the ad platform bottlenecks that most scaling brands face.
       </p>
       <h2>
         <strong>Ready to Scale Without Limits?</strong>
@@ -144,10 +144,10 @@ export const goodInTheWoods: CaseStudyDetail = {
       </p>
       <p>
         👉 Join our channel:{" "}
-        <a href="https://t.me/agrowth_agency" rel="noopener" target="_blank">
-          t.me/agrowth_agency
+        <a href="mailto:info@agentmart-ai.com" rel="noopener" target="_blank">
+          info@agentmart-ai.com
         </a>{" "}
-        or reach out today to see how AGrowth can unlock your next stage of growth.
+        or reach out today to see how Agent Mart AI can unlock your next stage of growth.
       </p>
     </>
   ),

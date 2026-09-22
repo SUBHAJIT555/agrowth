@@ -59,7 +59,7 @@ export const footerCompanyLinks: NavLink[] = [
   { label: "Checkout", href: "/checkout" },
   { label: "Case Study", href: "/case-study" },
   { label: "Partner", href: "/pages/stronger-together-agrowth" },
-  { label: "AGrowth Platform", href: "/pages/agrowth-platform" },
+  { label: "Agent Mart Platform", href: "/pages/agrowth-platform" },
   { label: "Privacy Policy", href: "/pages/privacy-policy" },
   { label: "Payment Methods", href: "/pages/payment-methods-policy" },
   { label: "Refund Policy", href: "/pages/refund-policy" },

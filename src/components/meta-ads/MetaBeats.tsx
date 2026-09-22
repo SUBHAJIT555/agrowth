@@ -42,7 +42,7 @@ export function MetaBeats() {
         <FadeIn>
           <div className="section-header">
             <h2 id="meta-beats-heading">
-              How AGrowth Beats
+              How Agent Mart AI Beats
               <span>Regular Ad Accounts Every Single Time</span>
             </h2>
           </div>
@@ -66,7 +66,7 @@ export function MetaBeats() {
           <div className="comparison-card card-orange" style={{ "--col-delay": "0.3s" } as CSSProperties}>
             <div className="card-top-content">
               <div className="card-header">
-                <div className="header-pill">AGrowth</div>
+                <div className="header-pill">Agent Mart AI</div>
               </div>
               {rows.map((row, index) => (
                 <div className="row-item" data-label={row} style={{ "--row-index": index } as CSSProperties} key={row}>

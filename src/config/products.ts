@@ -19,7 +19,7 @@ export const products = [
   },
   {
     id: "platform",
-    label: "AGrowth Platform",
+    label: "Agent Mart Platform",
     href: "/pages/agrowth-platform",
     kicker: "Platform",
   },

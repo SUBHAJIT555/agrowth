@@ -8,7 +8,7 @@ import { PlatformWhyChoose } from "@/components/agrowth-platform/PlatformWhyChoo
 import "@/styles/agrowth-platform.css";
 
 export const metadata: Metadata = {
-  title: "AGrowth Platform",
+  title: "Agent Mart Platform",
 };
 
 export default function AgrowthPlatformPage() {

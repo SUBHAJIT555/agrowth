@@ -1,17 +1,17 @@
 export const site = {
-  name: "AGrowth",
-  legalName: "AGrowth, LLC",
-  domain: "agrowth.io",
-  url: "https://agrowth.io",
-  title: "AGrowth - Premium Agency Ad Accounts to Scale Your Business",
-  titleTemplate: "%s – AGrowth.io",
+  name: "Agent Mart AI",
+  legalName: "Agent Mart AI",
+  domain: "agentmart-ai.com",
+  url: "https://agentmart-ai.com",
+  title: "Agent Mart AI — Intelligent Agents, Tools, and Automation",
+  titleTemplate: "%s – Agent Mart AI",
   description:
-    "At AGrowth, we deliver premium ad account services for the industry’s top platforms: Google, Meta, TikTok, Bing and 106+ platforms.",
-  copyright: "AGrowth, LLC reserved 2026",
+    "Agent Mart AI is a modern marketplace for intelligent agents, AI-powered tools, and automation — plus the premium ad infrastructure teams use to scale with confidence.",
+  copyright: "Agent Mart AI reserved 2026",
   footerDescription:
-    "At AGrowth, we are committed helping your business achieve its online goals through expert solutions.",
+    "Agent Mart AI helps teams discover intelligent agents, automate workflows, and scale campaigns with expert, technology-focused solutions.",
   contact: {
-    email: "sales@agrowth.io",
+    email: "info@agentmart-ai.com",
   },
   locations: [
     {

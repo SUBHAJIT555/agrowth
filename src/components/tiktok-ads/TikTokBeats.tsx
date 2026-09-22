@@ -12,7 +12,7 @@ const rows = [
   },
   {
     criteria: "Top-up & Spend",
-    agrowth: "Instant top-up, unlimited spend limits, no hidden fees via AGrowth auto platform",
+    agrowth: "Instant top-up, unlimited spend limits, no hidden fees via Agent Mart AI auto platform",
     regular: "Fixed spend thresholds and top-up limits",
   },
   {
@@ -66,7 +66,7 @@ export function TikTokBeats() {
         <FadeIn>
           <div className="section-header">
             <h2 id="tiktok-beats-heading">
-              How AGrowth Beats
+              How Agent Mart AI Beats
               <span>Regular Ad Accounts Every Single Time</span>
             </h2>
           </div>
@@ -85,7 +85,7 @@ export function TikTokBeats() {
           <div className="comparison-card card-orange" style={{ "--col-delay": "0.3s" } as CSSProperties}>
             <div className="card-top-content">
               <div className="card-header">
-                <h3 className="card-header-title text-white">AGrowth Premium Agency Account</h3>
+                <h3 className="card-header-title text-white">Agent Mart AI Premium Agency Account</h3>
               </div>
               {rows.map((row, index) => (
                 <div className="row-item" data-label={row.criteria} style={{ "--row-index": index } as CSSProperties} key={row.criteria}>

@@ -1,33 +1,16 @@
-import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-
-const logoAssets = {
-  white: {
-    src: "/assets/logos/agrowth-logo-white.png",
-    width: 120,
-    height: 124,
-  },
-  whiteSmall: {
-    src: "/assets/logos/agrowth-logo-white-small.png",
-    width: 97,
-    height: 100,
-  },
-  mark: {
-    src: "/assets/logos/agrowth-mark.png",
-    width: 800,
-    height: 676,
-  },
-} as const;
+import { site } from "@/config/site";
+import { BrandMark } from "@/components/ui/Logo/BrandMark";
 
 const sizes = {
-  header: { width: 70, height: 72 },
-  footer: { width: 142, height: 120 },
-  mobile: { width: 43, height: 44 },
+  header: { mark: 36, wordmark: true, type: 18 },
+  footer: { mark: 44, wordmark: true, type: 22 },
+  mobile: { mark: 36, wordmark: false, type: 16 },
 } as const;
 
 type LogoProps = {
-  variant?: keyof typeof logoAssets;
+  variant?: "white" | "whiteSmall" | "mark" | "dark";
   size?: keyof typeof sizes;
   className?: string;
   priority?: boolean;
@@ -37,26 +20,36 @@ export function Logo({
   variant = "white",
   size = "header",
   className,
-  priority = false,
 }: LogoProps) {
-  const asset = logoAssets[variant];
   const display = sizes[size];
+  const onDark = variant !== "dark" && variant !== "mark";
 
   return (
     <Link
       href="/"
-      className={cn("inline-flex items-center", className)}
-      aria-label="AGrowth.io home"
+      className={cn("inline-flex items-center gap-2.5 no-underline", className)}
+      aria-label={`${site.name} home`}
     >
-      <Image
-        src={asset.src}
-        alt="AGrowth.io"
-        width={display.width}
-        height={display.height}
-        priority={priority}
-        className="object-contain"
-        style={{ width: display.width, height: display.height }}
+      <BrandMark
+        tone="color"
+        title={site.name}
+        className="shrink-0"
+        style={{ width: display.mark, height: display.mark }}
       />
+      {display.wordmark ? (
+        <span
+          className={cn(
+            "font-semibold tracking-[-0.03em] leading-none",
+            onDark ? "text-white" : "text-[#0b1220]",
+          )}
+          style={{ fontSize: display.type }}
+        >
+          Agent Mart{" "}
+          <span className={onDark ? "text-[#ff8a3d]" : "text-[#e04300]"}>
+            AI
+          </span>
+        </span>
+      ) : null}
     </Link>
   );
 }

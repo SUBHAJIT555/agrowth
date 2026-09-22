@@ -13,7 +13,7 @@ const cards = [
     tone: "card-orange",
     icon: BoltIcon,
     title: "UNLIMITED SPEND & FAST FUNDING",
-    desc: "Scale with no daily spending limits. Fund your accounts in minutes via our AGrowth Auto platform, even on holidays.",
+    desc: "Scale with no daily spending limits. Fund your accounts in minutes via our Agent Mart Auto platform, even on holidays.",
   },
   {
     tone: "card-white",
@@ -25,7 +25,7 @@ const cards = [
     tone: "card-white",
     icon: BusinessTimeIcon,
     title: "24/7 OPERATIONAL AUTONOMY",
-    desc: "Manage, monitor, and allocate budgets proactively across your ad assets through the AGrowth dashboard.",
+    desc: "Manage, monitor, and allocate budgets proactively across your ad assets through the Agent Mart dashboard.",
   },
   {
     tone: "card-orange",

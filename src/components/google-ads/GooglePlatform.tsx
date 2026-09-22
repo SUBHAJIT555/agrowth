@@ -49,9 +49,9 @@ export function GooglePlatform() {
     <section className="google-platform" aria-labelledby="google-platform-heading">
       <div className="container">
         <FadeIn variant="right" className="content-col">
-          <div className="badge">Only at AGrowth</div>
+          <div className="badge">Only at Agent Mart AI</div>
           <div className="section-header">
-            <h2 id="google-platform-heading">AGrowth Platform</h2>
+            <h2 id="google-platform-heading">Agent Mart Platform</h2>
             <p className="sub-primary">Direct Top-up, Full Control</p>
             <p className="sub-secondary">Manage balances, allocate budgets and scale your campaigns 24/7</p>
           </div>

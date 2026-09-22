@@ -6,8 +6,8 @@ export const lumeera: CaseStudyDetail = {
   title: "Lumeera",
   metaTitle: "Lumeera",
   description:
-    "Using AGrowth’s Google Ads Agency Accounts and GMC setup to stabilize campaigns, scale ad spend, and drive 128% more conversions.",
-  lead: "Using AGrowth’s Google Ads Agency Accounts and GMC setup to stabilize campaigns, scale ad spend, and drive 128% more conversions.",
+    "Using Agent Mart AI’s Google Ads Agency Accounts and GMC setup to stabilize campaigns, scale ad spend, and drive 128% more conversions.",
+  lead: "Using Agent Mart AI’s Google Ads Agency Accounts and GMC setup to stabilize campaigns, scale ad spend, and drive 128% more conversions.",
   heroBg: "#e87438",
   heroImage: {
     src: "/assets/images/case-study/lumeera.png",
@@ -35,13 +35,13 @@ export const lumeera: CaseStudyDetail = {
         height={777}
       />
       <p className="cs-caption cs-caption--left">
-        Image showing the initial, fluctuating performance with a $19.99 Cost/Conversion before AGrowth&apos;s intervention
+        Image showing the initial, fluctuating performance with a $19.99 Cost/Conversion before Agent Mart AI&apos;s intervention
       </p>
     </>
   ),
   solution: (
     <>
-      <p>AGrowth provided a multi-faceted solution that addressed Lumeera’s core infrastructure and strategy needs:</p>
+      <p>Agent Mart AI provided a multi-faceted solution that addressed Lumeera’s core infrastructure and strategy needs:</p>
       <ul>
         <li>
           High-Trust Google Agency Account: We supplied a robust, pre-warmed agency ad account, eliminating the instability and restrictions that previously held them back.
@@ -60,7 +60,7 @@ export const lumeera: CaseStudyDetail = {
   ),
   results: (
     <>
-      <p>Between July and September 2025, Lumeera achieved remarkable improvements after switching to AGrowth’s solution:</p>
+      <p>Between July and September 2025, Lumeera achieved remarkable improvements after switching to Agent Mart AI’s solution:</p>
       <ul>
         <li>Conversions surged by +128.88%.</li>
         <li>Despite increasing the ad spend by +148.87% in ad spend (totaling over $8.29K), efficiency remained high.</li>
@@ -76,13 +76,13 @@ export const lumeera: CaseStudyDetail = {
         These results underline the effectiveness of combining a stable ad account infrastructure with smart budget allocation and niche product targeting.
       </p>
       <p>
-        With AGrowth’s Google Agency Ads Account and GMC setup, Lumeera turned a struggling ad operation into a scalable, profitable growth channel. Within three months, they doubled conversions, reduced acquisition costs, and unlocked consistent performance in the competitive dropshipping landscape.
+        With Agent Mart AI’s Google Agency Ads Account and GMC setup, Lumeera turned a struggling ad operation into a scalable, profitable growth channel. Within three months, they doubled conversions, reduced acquisition costs, and unlocked consistent performance in the competitive dropshipping landscape.
       </p>
       <h2>
         <strong>About the Client - Lumeera</strong>
       </h2>
       <p>
-        <strong>Lumeera</strong>, a local lifestyle brand, struggled with rising ad costs, limited reach, and inconsistent sales. Partnering with AGrowth in July 2025, they used our Google Ads Agency Account to overcome these hurdles and drive sustainable growth.
+        <strong>Lumeera</strong>, a local lifestyle brand, struggled with rising ad costs, limited reach, and inconsistent sales. Partnering with Agent Mart AI in July 2025, they used our Google Ads Agency Account to overcome these hurdles and drive sustainable growth.
       </p>
       <ul>
         <li>
@@ -103,10 +103,10 @@ export const lumeera: CaseStudyDetail = {
       </p>
       <p>
         👉 Join our channel:{" "}
-        <a href="https://t.me/agrowth_agency" rel="noopener" target="_blank">
-          t.me/agrowth_agency
+        <a href="mailto:info@agentmart-ai.com" rel="noopener" target="_blank">
+          info@agentmart-ai.com
         </a>{" "}
-        or reach out today to see how AGrowth can unlock your next stage of growth.
+        or reach out today to see how Agent Mart AI can unlock your next stage of growth.
       </p>
     </>
   ),

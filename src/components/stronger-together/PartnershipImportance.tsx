@@ -18,10 +18,10 @@ export function PartnershipImportance() {
           <div className="col-lg-5">
             <div className="split-copy">
               <h2 id="why-partnerships-heading" className="partners-gradient-heading">
-                Why Partnerships Matter At AGrowth?
+                Why Partnerships Matter At Agent Mart AI?
               </h2>
               <p>
-                At AGrowth, we believe that success in digital marketing requires not just
+                At Agent Mart AI, we believe that success in digital marketing requires not just
                 expertise, but also synergy. That’s why we cooperate with top-tier platforms and
                 technology providers across the globe.
               </p>

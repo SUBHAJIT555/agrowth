@@ -24,7 +24,7 @@ export function PlatformWhyChoose() {
         <FadeIn className="wcp-heading">
           <h2 id="platform-why-heading">
             <span className="wcp-h-part1">Why Choose </span>
-            <span className="wcp-h-part2">AGrowth Platform</span>
+            <span className="wcp-h-part2">Agent Mart Platform</span>
           </h2>
         </FadeIn>
         <div className="wcp-row">
@@ -46,7 +46,7 @@ export function PlatformWhyChoose() {
               <span className="wcp-col-header-icon">
                 <RocketIcon />
               </span>
-              <h3 className="wcp-col-header-title">With AGrowth Platform</h3>
+              <h3 className="wcp-col-header-title">With Agent Mart Platform</h3>
             </div>
             <ul className="wcp-list wcp-list-orange">
               {withItems.map((item) => (

@@ -99,7 +99,7 @@ export function PartnershipApplication() {
           <div className="col-lg-6">
             <div className="heading5">
               <h2>
-                <span className="headline-part1">Partner With AGrowth</span>
+                <span className="headline-part1">Partner With Agent Mart AI</span>
                 <span className="headline-part2"> - Let’s Grow Together!</span>
               </h2>
               <div className="space16" />

@@ -10,7 +10,7 @@ export function PartnershipHero() {
               <h1 className="partners-gradient-heading">
                 AGROWTH STRATEGIC PARTNERS DRIVING GROWTH TOGETHER
               </h1>
-              <p>Grow your business with AGrowth&apos;s certified partners</p>
+              <p>Grow your business with Agent Mart AI&apos;s certified partners</p>
               <a className="theme-btn3" href="#contact-section">
                 Become Our Partners
               </a>

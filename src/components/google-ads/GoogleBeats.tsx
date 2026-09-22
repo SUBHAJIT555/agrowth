@@ -37,7 +37,7 @@ const rows = [
   },
   {
     criteria: "Auto Top-up",
-    agrowth: "Via AGrowth Auto Platform",
+    agrowth: "Via Agent Mart Auto Platform",
     regular: "Manual",
   },
   {
@@ -71,7 +71,7 @@ export function GoogleBeats() {
         <FadeIn>
           <div className="section-header">
             <h2 id="google-beats-heading">
-              How AGrowth Beats
+              How Agent Mart AI Beats
               <span>Regular Ad Accounts Every Single Time</span>
             </h2>
           </div>
@@ -90,7 +90,7 @@ export function GoogleBeats() {
           <div className="comparison-card card-orange" style={{ "--col-delay": "0.3s" } as CSSProperties}>
             <div className="card-top-content">
               <div className="card-header">
-                <h3 className="card-header-title text-white">AGrowth</h3>
+                <h3 className="card-header-title text-white">Agent Mart AI</h3>
               </div>
               {rows.map((row, index) => (
                 <div className="row-item" data-label={row.criteria} style={{ "--row-index": index } as CSSProperties} key={row.criteria}>

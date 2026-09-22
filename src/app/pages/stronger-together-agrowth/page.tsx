@@ -10,7 +10,7 @@ import { StrategicPartners } from "@/components/stronger-together/StrategicPartn
 import "@/styles/stronger-together.css";
 
 export const metadata: Metadata = {
-  title: "Stronger Together | AGrowth Strategic Partners",
+  title: "Stronger Together | Agent Mart AI Strategic Partners",
 };
 
 export default function StrongerTogetherPage() {

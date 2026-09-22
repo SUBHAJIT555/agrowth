@@ -98,7 +98,7 @@ export function IncludedBenefits() {
           <div className="content-side">
             <div className="content-bg" />
             <div className="content-body">
-              <h2 className="content-title">Included When You Choose AGrowth</h2>
+              <h2 className="content-title">Included When You Choose Agent Mart AI</h2>
               <p className="content-subtitle">Focus on scaling. We&apos;ll handle the infrastructure</p>
               <div className="content-divider" />
               <div className="feature-slider-wrapper">

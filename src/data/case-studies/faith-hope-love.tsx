@@ -6,8 +6,8 @@ export const faithHopeLove: CaseStudyDetail = {
   title: "Faith Hope Love",
   metaTitle: "Faith Hope Love",
   description:
-    "Partnering with AGrowth allowed Faith Hope Love to transform scattered ad spend into structured campaigns that result in order increase, CPA cut, and profitable ROAS.",
-  lead: "Partnering with AGrowth allowed Faith Hope Love to transform scattered ad spend into structured campaigns that result in order increase, CPA cut, and profitable ROAS.",
+    "Partnering with Agent Mart AI allowed Faith Hope Love to transform scattered ad spend into structured campaigns that result in order increase, CPA cut, and profitable ROAS.",
+  lead: "Partnering with Agent Mart AI allowed Faith Hope Love to transform scattered ad spend into structured campaigns that result in order increase, CPA cut, and profitable ROAS.",
   heroBg: "#e87438",
   heroImage: {
     src: "/assets/images/case-study/faith-hope-love.png",
@@ -42,7 +42,7 @@ export const faithHopeLove: CaseStudyDetail = {
   solution: (
     <>
       <p>
-        AGrowth did more than just &quot;run ads.&quot; We took on the task of cleaning up and rebuilding Faith Hope Love&apos;s entire advertising ecosystem from the ground up.
+        Agent Mart AI did more than just &quot;run ads.&quot; We took on the task of cleaning up and rebuilding Faith Hope Love&apos;s entire advertising ecosystem from the ground up.
       </p>
       <ul>
         <li>
@@ -101,7 +101,7 @@ export const faithHopeLove: CaseStudyDetail = {
       />
       <h2>About the Client</h2>
       <p>
-        Faith Hope Love, a purpose-driven e-commerce brand, faced major challenges running Meta ads with little structure, broken tracking, and inconsistent results. As a small team with limited resources, scaling felt nearly impossible. After partnering with AGrowth, they turned disorganized campaigns into a clear growth system that delivered stability, stronger customer engagement, and a sustainable path forward.
+        Faith Hope Love, a purpose-driven e-commerce brand, faced major challenges running Meta ads with little structure, broken tracking, and inconsistent results. As a small team with limited resources, scaling felt nearly impossible. After partnering with Agent Mart AI, they turned disorganized campaigns into a clear growth system that delivered stability, stronger customer engagement, and a sustainable path forward.
       </p>
       <CsImage
         src="/assets/images/case-studies/faith-hope-love/fhl-about-website.png"
@@ -120,24 +120,24 @@ export const faithHopeLove: CaseStudyDetail = {
           <strong>Service used</strong>: Meta Agency Ad Account
         </li>
         <li>
-          <strong>Duration:</strong> 6 months working with AGrowth
+          <strong>Duration:</strong> 6 months working with Agent Mart AI
         </li>
       </ul>
       <h2>Client Testimonial</h2>
       <p>
-        &quot;AGrowth turned chaos into clarity. We’re no longer guessing—we’re growing, with purpose. Your team gave us the tools, guidance, and confidence we didn’t know we needed.&quot;
+        &quot;Agent Mart AI turned chaos into clarity. We’re no longer guessing—we’re growing, with purpose. Your team gave us the tools, guidance, and confidence we didn’t know we needed.&quot;
       </p>
       <p>
         <em>— Faith Hope Love Team.</em>
       </p>
       <h2>Ready to Turn Chaos Into Growth?</h2>
       <p>
-        Don’t let broken tracking, wasted spend, or unstable campaigns hold your business back. With AGrowth, you’ll get the structure, support, and strategy to scale with confidence.
+        Don’t let broken tracking, wasted spend, or unstable campaigns hold your business back. With Agent Mart AI, you’ll get the structure, support, and strategy to scale with confidence.
       </p>
       <p>
         👉 Join our channel:{" "}
-        <a href="https://t.me/agrowth_agency" rel="noopener" target="_blank">
-          t.me/agrowth_agency
+        <a href="mailto:info@agentmart-ai.com" rel="noopener" target="_blank">
+          info@agentmart-ai.com
         </a>{" "}
         or reach out today to unlock your next stage of growth.
       </p>

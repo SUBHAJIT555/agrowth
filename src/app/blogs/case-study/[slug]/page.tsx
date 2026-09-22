@@ -27,7 +27,7 @@ export async function generateMetadata({
       canonical: path,
     },
     openGraph: {
-      title: `${study.metaTitle} – AGrowth.io`,
+      title: `${study.metaTitle} – Agent Mart AI`,
       description: study.description,
       url: path,
       images: [study.heroImage.src],

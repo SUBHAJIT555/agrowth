@@ -6,8 +6,8 @@ export const marketwatch: CaseStudyDetail = {
   title: "MarketWatch",
   metaTitle: "MarketWatch",
   description:
-    "Using AGrowth’s Google Ads Agency Accounts to overcome spend limits, reduce CPA, and outperform major competitors while driving stronger revenue growth.",
-  lead: "Using AGrowth’s Google Ads Agency Accounts to overcome spend limits, reduce CPA, and outperform major competitors while driving stronger revenue growth.",
+    "Using Agent Mart AI’s Google Ads Agency Accounts to overcome spend limits, reduce CPA, and outperform major competitors while driving stronger revenue growth.",
+  lead: "Using Agent Mart AI’s Google Ads Agency Accounts to overcome spend limits, reduce CPA, and outperform major competitors while driving stronger revenue growth.",
   heroBg: "#e87438",
   heroImage: {
     src: "/assets/images/case-study/marketwatch.png",
@@ -18,7 +18,7 @@ export const marketwatch: CaseStudyDetail = {
   service: "Google Agency Ad Account",
   challenge: (
     <>
-      <p>Before partnering with AGrowth, MarketWatch encountered persistent obstacles that limited growth:</p>
+      <p>Before partnering with Agent Mart AI, MarketWatch encountered persistent obstacles that limited growth:</p>
       <ul>
         <li>
           <strong>Daily spending limits were too restrictive</strong>, preventing the brand from scaling campaigns for high-value products such as Tissot, Orient, and Citizen watches.
@@ -47,9 +47,9 @@ export const marketwatch: CaseStudyDetail = {
   solution: (
     <>
       <p>
-        AGrowth stepped in not just as a provider, but as a growth partner. By supplying agency-level Google Ads accounts with higher spending capacity and enhanced stability, MarketWatch gained the ability to scale confidently while competing head-to-head with established players.
+        Agent Mart AI stepped in not just as a provider, but as a growth partner. By supplying agency-level Google Ads accounts with higher spending capacity and enhanced stability, MarketWatch gained the ability to scale confidently while competing head-to-head with established players.
       </p>
-      <p>Here’s what AGrowth delivered:</p>
+      <p>Here’s what Agent Mart AI delivered:</p>
       <ul>
         <li>
           <strong>High-limit agency accounts</strong> with monthly budgets of 30–33M VND per campaign, eliminating daily spend caps.
@@ -71,7 +71,7 @@ export const marketwatch: CaseStudyDetail = {
   ),
   results: (
     <>
-      <p>AGrowth’s solutions drove measurable improvements across key performance areas:</p>
+      <p>Agent Mart AI’s solutions drove measurable improvements across key performance areas:</p>
       <ul>
         <li>
           <strong>Impression Share Leadership</strong>: Reached <strong>72% (+2%)</strong>, significantly higher than <strong>Shopee (52%)</strong> and <strong>WatchStore.vn (36%)</strong>, establishing dominance in Google Ads auctions.
@@ -89,7 +89,7 @@ export const marketwatch: CaseStudyDetail = {
           <strong>Near-Perfect Optimization Score:</strong> Account optimization score reached 99.8%, ensuring campaigns operated at peak efficiency.
         </li>
         <li>
-          <strong>Revenue Growth</strong>: Google Ads channel revenue increased by <strong>~35%</strong> compared to the pre-AGrowth period, proving the impact of stronger account infrastructure and strategic support.
+          <strong>Revenue Growth</strong>: Google Ads channel revenue increased by <strong>~35%</strong> compared to the pre-Agent Mart AI period, proving the impact of stronger account infrastructure and strategic support.
         </li>
       </ul>
       <CsImage
@@ -105,13 +105,13 @@ export const marketwatch: CaseStudyDetail = {
         height={645}
       />
       <p>
-        Overall, the partnership with AGrowth not only stabilized performance but also unlocked sustainable growth. By lowering acquisition costs, maximizing visibility against top competitors, and ensuring near-perfect campaign optimization, the brand was able to scale confidently while protecting profitability.
+        Overall, the partnership with Agent Mart AI not only stabilized performance but also unlocked sustainable growth. By lowering acquisition costs, maximizing visibility against top competitors, and ensuring near-perfect campaign optimization, the brand was able to scale confidently while protecting profitability.
       </p>
       <h2>
         <strong>About the Client – MarketWatch</strong>
       </h2>
       <p>
-        <strong>MarketWatch</strong>, a leading luxury watch retailer in Vietnam, faced serious challenges scaling their Google Ads campaigns due to daily spend caps, frequent disapprovals, and tough competition from big marketplaces. By switching to AGrowth’s Google Ads Agency Account service, they stabilized performance, lowered costs, and outperformed competitors within just two months.
+        <strong>MarketWatch</strong>, a leading luxury watch retailer in Vietnam, faced serious challenges scaling their Google Ads campaigns due to daily spend caps, frequent disapprovals, and tough competition from big marketplaces. By switching to Agent Mart AI’s Google Ads Agency Account service, they stabilized performance, lowered costs, and outperformed competitors within just two months.
       </p>
       <ul>
         <li>
@@ -134,12 +134,12 @@ export const marketwatch: CaseStudyDetail = {
         <strong>Ready to Scale Without Limits?</strong>
       </h2>
       <p>
-        If daily spend caps, high CPAs, or tough competition are holding your campaigns back, it’s time to switch to a stronger solution. With AGrowth’s Google Ads Agency Accounts, you can scale budgets freely, beat competitors in auctions, and drive profitable growth with confidence.
+        If daily spend caps, high CPAs, or tough competition are holding your campaigns back, it’s time to switch to a stronger solution. With Agent Mart AI’s Google Ads Agency Accounts, you can scale budgets freely, beat competitors in auctions, and drive profitable growth with confidence.
       </p>
       <p>
         👉 Join our channel:{" "}
-        <a href="https://t.me/agrowth_agency" rel="noopener" target="_blank">
-          t.me/agrowth_agency
+        <a href="mailto:info@agentmart-ai.com" rel="noopener" target="_blank">
+          info@agentmart-ai.com
         </a>
         {" "}or contact us today to unlock your next stage of growth.
       </p>
