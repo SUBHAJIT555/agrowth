@@ -82,12 +82,19 @@
   flex-shrink: 0;
 }
 
+.services-page .service-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+}
+
 .services-page .theme-btn5 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-top: auto;
+  margin-top: 0;
   align-self: flex-start;
   padding: 12px 24px;
   border: 2px solid #ffffff;
@@ -113,6 +120,18 @@
   color: #ffffff;
   background-color: #d5261f;
   border-color: #d5261f;
+}
+
+.services-page .theme-btn5.is-purchase {
+  color: #d5261f;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.services-page .theme-btn5.is-purchase:hover {
+  color: #ffffff;
+  background-color: #0b0314;
+  border-color: #0b0314;
 }
 
 .services-page .cta2 {

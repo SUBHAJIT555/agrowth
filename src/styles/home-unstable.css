@@ -392,6 +392,13 @@
   flex-direction: column;
 }
 
+.home-unstable .cta-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
 .home-unstable .section-headline {
   font-family: var(--font-outfit), sans-serif;
   font-size: 42px;

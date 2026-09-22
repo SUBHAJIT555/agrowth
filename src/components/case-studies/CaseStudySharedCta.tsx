@@ -1,9 +1,6 @@
 import Link from "next/link";
 import { ArrowRightIcon } from "@/components/case-studies/icons";
 
-const sharedCtaHref =
-  "/services?utm_source=banner&utm_medium=thanhnb&utm_campaign=rent_service_casestudy&utm_content=blog_sidebar_casestudy";
-
 export function CaseStudySharedCta() {
   return (
     <section className="cta2 cs-shared-cta">
@@ -14,8 +11,8 @@ export function CaseStudySharedCta() {
             If you&apos;re stuck with ad account restriction, unstable performance, or scaling roadbloacks, it&apos;s time to switch to a smarter solution.
           </p>
           <div className="form-area">
-            <Link className="theme-btn3" href={sharedCtaHref}>
-              Contact Us
+            <Link className="theme-btn3" href="/checkout">
+              Purchase
               <span>
                 <ArrowRightIcon />
               </span>

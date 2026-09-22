@@ -23,10 +23,10 @@ export function PlatformCta() {
           </div>
           <div className="agrowth-cta__actions">
             <Link
-              href="/agrowth-platform"
+              href="/checkout?service=platform"
               className="agrowth-cta__btn agrowth-cta__btn--primary agrowth-cta__btn--primary-inverted"
             >
-              Get Access
+              Purchase
               <span className="agrowth-cta__btn-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none">
                   <path

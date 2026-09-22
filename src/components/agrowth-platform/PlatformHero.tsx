@@ -29,8 +29,8 @@ export function PlatformHero() {
               Experience the ultimate AGrowth Auto Top-up Platform designed for Media Buyers. Manage balances, allocate budgets, and scale your campaigns 24/7 - all-in-one platform.
             </p>
             <div className="abp-btn-wrap">
-              <Link className="theme-btn3" href="/contact-us">
-                Try Now
+              <Link className="theme-btn3" href="/checkout?service=platform">
+                Purchase
                 <span>
                   <ArrowRightIcon />
                 </span>

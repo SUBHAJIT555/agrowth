@@ -12,8 +12,8 @@ export function GoogleCta() {
             If you&apos;re stuck with ad account restrictions, unstable performance, or scalling  roadblocks, it&apos;s time to switch to a smarter solution
           </p>
           <div className="form-area">
-            <Link className="theme-btn3" href="/contact-us">
-              CONTACT US NOW
+            <Link className="theme-btn3" href="/checkout?service=google">
+              Purchase
               <span>
                 <ArrowRightIcon />
               </span>

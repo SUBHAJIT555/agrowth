@@ -29,7 +29,7 @@ Do **not** create placeholder implementations for missing routes (About, Blog, C
 | Services | https://agrowth.io/pages/services | `/pages/services` (`/services` alias) | SERVICE | COMPLETE (LOCKED) |
 | AGrowth Platform | https://agrowth.io/pages/agrowth-platform | `/pages/agrowth-platform` (`/agrowth-platform` alias) | PLATFORM | COMPLETE |
 | Contact us | https://agrowth.io/pages/contact-us | `/pages/contact-us` (`/contact-us` alias) | CONTACT | COMPLETE |
-| Checkout | — | `/checkout` (`/checkout/success`) | CHECKOUT | COMPLETE — frontend only |
+| Checkout | — | `/checkout` (`/checkout/payment`, `/checkout/success`) | CHECKOUT | COMPLETE — locked service from URL, INR presets + custom, UPI payment |
 | Partner | https://agrowth.io/pages/stronger-together-agrowth | `/pages/stronger-together-agrowth` (`/stronger-together-agrowth` alias) | PARTNERSHIP | COMPLETE |
 | Careers | https://agrowth.io/pages/careers | `/careers` | CAREERS | NOT STARTED — omitted from Header/Footer |
 

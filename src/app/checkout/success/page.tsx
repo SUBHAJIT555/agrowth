@@ -3,7 +3,7 @@ import { CheckoutSuccess } from "@/components/checkout/CheckoutSuccess";
 import "@/styles/checkout.css";
 
 export const metadata: Metadata = {
-  title: "Checkout",
+  title: "Payment received",
 };
 
 export default function CheckoutSuccessPage() {

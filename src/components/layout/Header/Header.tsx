@@ -42,9 +42,14 @@ export function Header() {
         >
           <Logo variant="white" size="header" priority />
           <DesktopNavigation />
-          <Button href={headerCta.href} className="shrink-0">
-            {headerCta.label}
-          </Button>
+          <div className="flex shrink-0 items-center gap-2">
+            <Button href="/checkout" variant="outline" className="shrink-0">
+              Purchase
+            </Button>
+            <Button href={headerCta.href} className="shrink-0">
+              {headerCta.label}
+            </Button>
+          </div>
         </div>
       </Container>
       <MobileNavigation key={pathname} />

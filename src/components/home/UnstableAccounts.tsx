@@ -139,6 +139,12 @@ export function UnstableAccounts() {
                   <ArrowUpRightIcon />
                 </span>
               </Link>
+              <Link href="/checkout" className="home-cta-btn">
+                Purchase
+                <span className="btn-arrow">
+                  <ArrowUpRightIcon />
+                </span>
+              </Link>
             </div>
           </div>
         </div>

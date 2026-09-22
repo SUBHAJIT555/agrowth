@@ -167,8 +167,11 @@ export function MobileNavigation() {
                 })}
               </ul>
             </nav>
-            <div className="mt-6">
-              <Button href={headerCta.href} className="w-full justify-center">
+            <div className="mt-6 flex flex-col gap-3">
+              <Button href="/checkout" className="w-full justify-center">
+                Purchase
+              </Button>
+              <Button href={headerCta.href} variant="outline" className="w-full justify-center">
                 {headerCta.label}
               </Button>
             </div>

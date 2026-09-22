@@ -5,6 +5,7 @@ const services = [
   {
     name: "Google",
     href: "/rent-google-agency-ads-account",
+    checkout: "/checkout?service=google",
     image: "/assets/images/services/google-wordmark.png",
     width: 449,
     height: 210,
@@ -13,6 +14,7 @@ const services = [
   {
     name: "Meta",
     href: "/rent-meta-agency-ads-account",
+    checkout: "/checkout?service=meta",
     image: "/assets/images/services/meta-wordmark.png",
     width: 420,
     height: 200,
@@ -21,6 +23,7 @@ const services = [
   {
     name: "TikTok",
     href: "/rent-tiktok-agency-ads-account",
+    checkout: "/checkout?service=tiktok",
     image: "/assets/images/services/tiktok-wordmark.png",
     width: 300,
     height: 140,
@@ -29,6 +32,7 @@ const services = [
   {
     name: "Bing",
     href: "/rent-bing-agency-ads-account",
+    checkout: null,
     image: "/assets/images/services/bing-wordmark.png",
     width: 300,
     height: 140,
@@ -71,10 +75,18 @@ export function ServicesGrid() {
                 <div className="space16" />
                 <p>{service.copy}</p>
                 <div className="space30" />
-                <Link href={service.href} className="theme-btn5">
-                  Learn More
-                  <ArrowRightIcon />
-                </Link>
+                <div className="service-actions">
+                  <Link href={service.href} className="theme-btn5">
+                    Learn More
+                    <ArrowRightIcon />
+                  </Link>
+                  {service.checkout ? (
+                    <Link href={service.checkout} className="theme-btn5 is-purchase">
+                      Purchase
+                      <ArrowRightIcon />
+                    </Link>
+                  ) : null}
+                </div>
               </div>
             </article>
           ))}

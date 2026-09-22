@@ -15,13 +15,17 @@ export function CheckoutSuccess() {
   return (
     <div className="ag-checkout-page">
       <div className="checkout-shell ag-checkout-success">
-        <h1 className="ag-checkout-title">Request received</h1>
+        <h1 className="ag-checkout-title">Payment received</h1>
         {request ? (
           <>
             <p>
               Thanks {request.name}. Your request for {request.productLabel}
-              {request.amountLabel ? ` at ${request.amountLabel}` : ""} is saved
-              in this browser.
+              {request.billingPlanLabel ? ` (${request.billingPlanLabel})` : ""}
+              {request.amountLabel ? ` for ${request.amountLabel}` : ""}
+              {request.paymentMethodLabel
+                ? ` via ${request.paymentMethodLabel}`
+                : ""}{" "}
+              is saved in this browser.
             </p>
             <p className="ag-checkout-id">Reference: {request.id}</p>
           </>

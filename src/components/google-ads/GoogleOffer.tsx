@@ -116,7 +116,7 @@ export function GoogleOffer() {
                   <div className="subtitle">
                     <p>Spend actively and receive a promo code. Reach out now to secure your bonus.</p>
                   </div>
-                  <Link href="/contact-us" className="cta-button">
+                  <Link href="/checkout?service=google" className="cta-button">
                     <span className="btn-text">CLAIM OFFER</span>
                     <span className="btn-icon-wrapper">
                       <ArrowUpRightIcon />

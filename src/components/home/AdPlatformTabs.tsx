@@ -14,6 +14,7 @@ const tabs = [
     icon: <MetaMark />,
     title: "Meta Agency Ad Accounts",
     href: "/rent-meta-agency-ads-account",
+    checkout: "/checkout?service=meta",
     pills: [
       "Low Service Fees From 3%",
       "Full Package (Profile, Fanpage, BM, Proxy)",
@@ -28,6 +29,7 @@ const tabs = [
     icon: <GoogleMark />,
     title: "Google Agency Ad Accounts",
     href: "/rent-google-agency-ads-account",
+    checkout: "/checkout?service=google",
     pills: [
       "Competitive Rates Starting From 6%",
       "Verify Your Google Business Profile",
@@ -42,6 +44,7 @@ const tabs = [
     icon: <TikTokMark />,
     title: "TikTok Agency Ad Accounts",
     href: "/rent-tiktok-agency-ads-account",
+    checkout: "/checkout?service=tiktok",
     pills: [
       "Affordable Rates From 3%",
       "Unlimited Account Access & Instant Setup",
@@ -123,12 +126,20 @@ export function AdPlatformTabs() {
                       </div>
                     ))}
                   </div>
-                  <Link href={tab.href} className="btn-see-more">
-                    <span className="btn-text">See More</span>
-                    <span className="btn-arrow">
-                      <ArrowUpRightIcon />
-                    </span>
-                  </Link>
+                  <div className="tab-actions">
+                    <Link href={tab.href} className="btn-see-more">
+                      <span className="btn-text">See More</span>
+                      <span className="btn-arrow">
+                        <ArrowUpRightIcon />
+                      </span>
+                    </Link>
+                    <Link href={tab.checkout} className="btn-see-more">
+                      <span className="btn-text">Purchase</span>
+                      <span className="btn-arrow">
+                        <ArrowUpRightIcon />
+                      </span>
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>

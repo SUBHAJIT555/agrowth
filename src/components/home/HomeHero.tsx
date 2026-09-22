@@ -18,6 +18,12 @@ function ContactCta({ className }: { className: string }) {
           <ArrowUpRightIcon />
         </span>
       </Link>
+      <Link href="/checkout" className="cta-btn btn-gradient">
+        <span className="cta-text">Purchase</span>
+        <span className="cta-arrow">
+          <ArrowUpRightIcon />
+        </span>
+      </Link>
     </div>
   );
 }

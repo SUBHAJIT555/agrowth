@@ -193,6 +193,13 @@ button.home-cta-btn {
   margin-top: 16px;
 }
 
+.home-ad-platform .tab-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
 .home-cta {
   --cta-pt: 44px;
   --cta-pb: 44px;

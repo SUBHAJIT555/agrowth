@@ -204,6 +204,25 @@
   background-color: #f7f7f9;
 }
 
+.home-hero .btn-gradient {
+  background: linear-gradient(135deg, #ff4e00 0%, #ff8300 100%);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.home-hero .btn-gradient .cta-arrow {
+  background-color: #ffffff;
+  color: #e04300;
+}
+
+.home-hero .btn-gradient:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 12px 30px rgba(255, 78, 0, 0.25),
+    0 5px 15px rgba(0, 0, 0, 0.4);
+  filter: brightness(1.08);
+}
+
 .home-hero .bottom-divider {
   position: absolute;
   bottom: 0;
@@ -331,6 +350,7 @@
     right: 0;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 12px;
     padding: 0 16px;
     z-index: 30;

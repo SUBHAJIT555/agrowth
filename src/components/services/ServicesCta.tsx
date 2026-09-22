@@ -18,7 +18,7 @@ export function ServicesCta() {
             We provide the best solutions to help you achieve your business goals. Our team of experts is dedicated to delivering results that matter.
           </p>
           <div className="form-area">
-            <Button href="/contact-us">Contact Us</Button>
+            <Button href="/checkout">Purchase</Button>
           </div>
         </div>
       </div>
