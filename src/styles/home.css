@@ -104,6 +104,7 @@
 .home-cta-btn span.btn-arrow {
   width: 42px;
   height: 42px;
+  margin-left: auto;
   background-color: #ffffff;
   color: #d5261f;
   border-radius: 50%;
@@ -111,6 +112,10 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+
+button.home-cta-btn {
+  justify-content: space-between;
 }
 
 .home-contact.faq-contact {

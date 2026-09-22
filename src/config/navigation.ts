@@ -56,6 +56,7 @@ export const headerCta: NavLink = {
 
 export const footerCompanyLinks: NavLink[] = [
   { label: "Contact Us", href: "/pages/contact-us" },
+  { label: "Checkout", href: "/checkout" },
   { label: "Case Study", href: "/case-study" },
   { label: "Partner", href: "/pages/stronger-together-agrowth" },
   { label: "AGrowth Platform", href: "/pages/agrowth-platform" },

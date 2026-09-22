@@ -18,7 +18,7 @@ function AccessCta({ className }: { className: string }) {
           <ArrowUpRightIcon />
         </span>
       </a>
-      <Link href="#lets-scale-your-ads" className="cta-btn btn-gradient">
+      <Link href="/checkout?service=meta" className="cta-btn btn-gradient">
         <span className="cta-text">Get Access</span>
         <span className="cta-arrow">
           <ArrowUpRightIcon />

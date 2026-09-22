@@ -295,7 +295,8 @@
   max-width: none;
   height: 56px;
   margin-top: 20px;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 6px 6px 6px 24px;
 }
 @media (max-width: 768px) {
   .meta-ads-page .meta-contact .heading5 h2,
