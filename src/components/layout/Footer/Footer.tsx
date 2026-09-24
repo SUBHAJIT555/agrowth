@@ -8,6 +8,24 @@ import { site } from "@/config/site";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 
+function PhoneIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="mt-0.5 size-5 shrink-0"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M7.2 4.8h2.4l1.2 3-1.8 1.2a11 11 0 0 0 5.8 5.8l1.2-1.8 3 1.2v2.4c0 .7-.6 1.2-1.3 1.2C9.8 18 6 14.2 6 6.1 6 5.4 6.5 4.8 7.2 4.8Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 function MailIcon() {
   return (
     <svg
@@ -122,6 +140,18 @@ export function Footer() {
                   <MailIcon />
                   <span>Email: {site.contact.email}</span>
                 </a>
+              </li>
+              <li>
+                <a
+                  href={site.contact.phoneHref}
+                  className="flex items-start gap-4 text-[16px] text-white hover:text-brand-orange-mid"
+                >
+                  <PhoneIcon />
+                  <span>Phone: {site.contact.phone}</span>
+                </a>
+              </li>
+              <li className="text-[14px] leading-6 text-white/70">
+                Legal name: {site.legalName}
               </li>
             </ul>
           </div>

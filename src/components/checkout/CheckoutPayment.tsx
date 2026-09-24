@@ -8,7 +8,7 @@ import {
   isEnabledPaymentMethod,
   paymentMethods,
   readCheckoutRequest,
-  saveCheckoutPayment,
+  startMpursePayment,
   type CheckoutRequest,
   type PaymentMethodId,
 } from "@/lib/checkout";
@@ -17,17 +17,13 @@ import { CheckoutButton } from "@/components/checkout/CheckoutButton";
 const defaultMethod =
   paymentMethods.find((method) => method.enabled)?.id ?? "upi";
 
-function isUpiId(value: string) {
-  return /^[a-zA-Z0-9.\-_]{2,}@[a-zA-Z]{2,}$/.test(value.trim());
-}
-
 export function CheckoutPayment() {
   const router = useRouter();
   const [request, setRequest] = useState<CheckoutRequest | null>(null);
   const [ready, setReady] = useState(false);
   const [methodId, setMethodId] = useState<PaymentMethodId>(defaultMethod);
-  const [upiId, setUpiId] = useState("");
   const [status, setStatus] = useState("");
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     const stored = readCheckoutRequest();
@@ -41,25 +37,26 @@ export function CheckoutPayment() {
   }, []);
 
   const method = useMemo(() => getPaymentMethod(methodId), [methodId]);
-  const isUpi = methodId === "upi";
   const checkoutHref = request?.productId
     ? `/checkout?service=${request.productId}`
     : "/checkout";
 
-  function onPay(event: FormEvent<HTMLFormElement>) {
+  async function onPay(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!request || !method?.enabled) {
       setStatus("UPI is the only payment method available right now.");
       return;
     }
 
-    if (isUpi && !isUpiId(upiId)) {
-      setStatus("Enter a valid UPI ID, for example name@upi.");
-      return;
+    setSubmitting(true);
+    setStatus("");
+    try {
+      const result = await startMpursePayment(request);
+      router.push(`/pay?order_id=${encodeURIComponent(result.order_id ?? "")}`);
+    } catch (error) {
+      setStatus(error instanceof Error ? error.message : "Could not start payment.");
+      setSubmitting(false);
     }
-
-    saveCheckoutPayment(request, method.id);
-    router.push("/checkout/success");
   }
 
   if (!ready) {
@@ -125,7 +122,7 @@ export function CheckoutPayment() {
                       <span className="ag-checkout-plan-label">
                         {item.label}
                         {disabled ? (
-                          <span className="ag-checkout-amount-tag">Unavailable</span>
+                          <span className="ag-checkout-amount-tag">Coming soon</span>
                         ) : null}
                       </span>
                       <span className="ag-checkout-plan-hint">{item.hint}</span>
@@ -134,26 +131,10 @@ export function CheckoutPayment() {
                 })}
               </div>
             </fieldset>
-
-            {isUpi ? (
-              <div className="ag-checkout-fields ag-checkout-upi">
-                <label htmlFor="upi-id">UPI ID</label>
-                <input
-                  id="upi-id"
-                  name="upi-id"
-                  placeholder="yourname@upi"
-                  autoComplete="off"
-                  value={upiId}
-                  required
-                  aria-label="UPI ID"
-                  onChange={(event) => setUpiId(event.target.value)}
-                />
-                <p className="ag-checkout-pay-note">
-                  Open any UPI app and pay {request.amountLabel} from this ID.
-                  Account access starts after the payment is confirmed.
-                </p>
-              </div>
-            ) : null}
+            <p className="ag-checkout-pay-note">
+              On a phone we open your UPI app. On a computer we show a QR to
+              scan. Keep the next page open until payment succeeds.
+            </p>
           </div>
 
           <aside className="ag-checkout-card ag-checkout-summary">
@@ -175,14 +156,10 @@ export function CheckoutPayment() {
                 <dt>Method</dt>
                 <dd>{method?.label ?? "—"}</dd>
               </div>
-              <div>
-                <dt>Reference</dt>
-                <dd>{request.id}</dd>
-              </div>
             </dl>
             <div className="ag-checkout-actions">
-              <CheckoutButton type="submit">
-                Pay {request.amountLabel} with UPI
+              <CheckoutButton type="submit" disabled={submitting}>
+                {submitting ? "Starting UPI…" : `Pay ${request.amountLabel} with UPI`}
               </CheckoutButton>
               {status ? <p className="ag-checkout-status">{status}</p> : null}
             </div>

@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { FormEvent, useState } from "react";
+import { IndiaPhoneCode } from "@/components/forms/IndiaPhoneCode";
 import { ArrowUpRightIcon } from "@/components/home/icons";
+import { payloadFromForm, submitToMailer } from "@/lib/forms/submitToMailer";
 
 const platforms = ["Google", "Facebook", "TikTok", "Bing", "Others"] as const;
 
@@ -10,16 +12,22 @@ export function HomeContact() {
   const [agreed, setAgreed] = useState(true);
   const [status, setStatus] = useState("");
 
-  function onSubmit(event: FormEvent<HTMLFormElement>) {
+  async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
     if (!form.checkValidity() || !agreed) {
       setStatus("Please complete the required fields.");
       return;
     }
-    setStatus("Thanks — this demo form does not send messages.");
-    form.reset();
-    setAgreed(true);
+    setStatus("Sending…");
+    try {
+      await submitToMailer(payloadFromForm(form, "contact"));
+      setStatus("Message sent. We will get back to you shortly.");
+      form.reset();
+      setAgreed(true);
+    } catch (error) {
+      setStatus(error instanceof Error ? error.message : "Unable to send message.");
+    }
   }
 
   return (
@@ -86,12 +94,7 @@ export function HomeContact() {
                 <div className="single-input phone-contact">
                   <span className="wpcf7-form-control-wrap required" data-name="phone">
                     <div className="phone-field">
-                      <select name="phone-country" defaultValue="US" aria-label="Telephone country code">
-                        <option value="US">🇺🇸 +1</option>
-                        <option value="VN">🇻🇳 +84</option>
-                        <option value="GB">🇬🇧 +44</option>
-                        <option value="AU">🇦🇺 +61</option>
-                      </select>
+                      <IndiaPhoneCode />
                       <input id="phone-input" name="phone" placeholder="Your phone number" required />
                     </div>
                   </span>

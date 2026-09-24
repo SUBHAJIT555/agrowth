@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import {
@@ -13,7 +13,12 @@ import {
   products,
   type BillingPlanId,
 } from "@/config/products";
-import { createCheckoutId, saveCheckoutRequest } from "@/lib/checkout";
+import { IndiaPhoneCode } from "@/components/forms/IndiaPhoneCode";
+import {
+  createCheckoutId,
+  readCheckoutRequest,
+  saveCheckoutRequest,
+} from "@/lib/checkout";
 import { CheckoutButton } from "@/components/checkout/CheckoutButton";
 
 const defaultPlan = billingPlans.find((plan) => plan.id === "hourly") ?? billingPlans[0];
@@ -29,6 +34,46 @@ export function CheckoutView() {
     defaultPlan.amount ? String(defaultPlan.amount) : "",
   );
   const [status, setStatus] = useState("");
+  const [hydrated, setHydrated] = useState(false);
+  const [saved, setSaved] = useState(() => ({
+    name: "",
+    email: "",
+    phone: "",
+    company: "",
+    address: "",
+    city: "",
+    contactDetails: "",
+    message: "",
+  }));
+
+  useEffect(() => {
+    const stored = readCheckoutRequest();
+    if (!stored || stored.paidAt) {
+      setHydrated(true);
+      return;
+    }
+    if (stored.billingPlanId) {
+      setPlanId(stored.billingPlanId);
+      setCustomAmount(
+        stored.billingPlanId === "custom"
+          ? String(stored.amount || "")
+          : stored.amount
+            ? String(stored.amount)
+            : "",
+      );
+    }
+    setSaved({
+      name: stored.name ?? "",
+      email: stored.email ?? "",
+      phone: stored.phone ?? "",
+      company: stored.company ?? "",
+      address: stored.address ?? "",
+      city: stored.city ?? "",
+      contactDetails: stored.contactDetails ?? "",
+      message: stored.message ?? "",
+    });
+    setHydrated(true);
+  }, []);
 
   const product = useMemo(
     () => (productId ? getProduct(productId) : null),
@@ -53,16 +98,25 @@ export function CheckoutView() {
     }
 
     const data = new FormData(form);
+    const phone = String(data.get("phone") ?? "").replace(/\D/g, "").replace(/^91/, "");
+    if (!/^[6-9][0-9]{9}$/.test(phone)) {
+      setStatus("Enter a valid 10-digit Indian mobile number.");
+      return;
+    }
+
+    const existing = readCheckoutRequest();
     saveCheckoutRequest({
-      id: createCheckoutId(),
+      id: existing?.id && !existing.paidAt ? existing.id : createCheckoutId(),
       productId: product.id,
       productLabel: product.label,
       billingPlanId: plan.id,
       billingPlanLabel: plan.label,
       name: String(data.get("name") ?? ""),
       email: String(data.get("email") ?? ""),
-      phone: String(data.get("phone") ?? ""),
+      phone,
       company: String(data.get("company") ?? ""),
+      address: String(data.get("address") ?? ""),
+      city: String(data.get("city") ?? ""),
       contactType:
         data.get("contact-type") === "WhatsApp" ? "WhatsApp" : "Telegram",
       contactDetails: String(data.get("contact-details") ?? ""),
@@ -70,7 +124,7 @@ export function CheckoutView() {
       amountLabel: formatAmount(amount),
       currency: "INR",
       message: String(data.get("message") ?? ""),
-      createdAt: new Date().toISOString(),
+      createdAt: existing?.createdAt ?? new Date().toISOString(),
     });
 
     router.push("/checkout/payment");
@@ -105,7 +159,12 @@ export function CheckoutView() {
             </div>
           </div>
         ) : (
-          <form className="ag-checkout-grid" onSubmit={onSubmit} noValidate>
+          <form
+            key={hydrated ? "ready" : "init"}
+            className="ag-checkout-grid"
+            onSubmit={onSubmit}
+            noValidate
+          >
             <div className="ag-checkout-card">
               <div className="ag-checkout-locked">
                 <h2>{product?.label}</h2>
@@ -166,22 +225,52 @@ export function CheckoutView() {
               </div>
 
               <div className="ag-checkout-fields">
-                <input name="name" placeholder="Your name" required aria-label="Your name" />
+                <input
+                  name="name"
+                  placeholder="Your name"
+                  required
+                  defaultValue={saved.name}
+                  aria-label="Your name"
+                />
                 <input
                   type="email"
                   name="email"
                   placeholder="Your email"
                   required
+                  defaultValue={saved.email}
                   aria-label="Your email"
                 />
+                <div className="ag-checkout-phone">
+                  <IndiaPhoneCode />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="10-digit Indian mobile"
+                    required
+                    defaultValue={saved.phone}
+                    aria-label="Your phone number"
+                  />
+                </div>
                 <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Your phone number"
-                  required
-                  aria-label="Your phone number"
+                  name="company"
+                  placeholder="Company name"
+                  defaultValue={saved.company}
+                  aria-label="Company name"
                 />
-                <input name="company" placeholder="Company name" aria-label="Company name" />
+                <input
+                  name="address"
+                  placeholder="Street address"
+                  required
+                  defaultValue={saved.address}
+                  aria-label="Street address"
+                />
+                <input
+                  name="city"
+                  placeholder="City"
+                  required
+                  defaultValue={saved.city}
+                  aria-label="City"
+                />
                 <div className="ag-checkout-split">
                   <select name="contact-type" defaultValue="Telegram" aria-label="Contact type">
                     <option>Telegram</option>
@@ -191,10 +280,16 @@ export function CheckoutView() {
                     name="contact-details"
                     placeholder="Contact details"
                     required
+                    defaultValue={saved.contactDetails}
                     aria-label="Contact details"
                   />
                 </div>
-                <textarea name="message" placeholder="Your message" aria-label="Your message" />
+                <textarea
+                  name="message"
+                  placeholder="Your message"
+                  defaultValue={saved.message}
+                  aria-label="Your message"
+                />
               </div>
             </div>
 

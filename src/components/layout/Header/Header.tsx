@@ -29,7 +29,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        "pointer-events-none inset-x-0 top-0 z-50 py-3",
+        "pointer-events-none inset-x-0 top-0 z-[200] py-3",
         scrolled ? "header-sticky-in fixed" : "absolute",
       )}
     >

@@ -32,6 +32,13 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+mpurse.env
+public/api/.env
+public/api/mpurse.env
+public/api/data/*.json
+out/api/.env
+!public/api/data/.gitkeep
+!public/api/.env.example
 
 # vercel
 .vercel

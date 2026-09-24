@@ -304,6 +304,34 @@
   accent-color: #d5261f;
 }
 
+.ag-checkout-phone {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.ag-checkout-phone .phone-flag {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+}
+
+.ag-checkout-phone select {
+  width: 72px;
+  flex: 0 0 72px;
+  border: none;
+  background: transparent;
+  padding: 0 4px;
+}
+
+.ag-checkout-phone input {
+  flex: 1;
+  min-width: 0;
+  width: auto !important;
+}
+
 .ag-checkout-fields {
   display: grid;
   gap: 16px;
@@ -406,6 +434,27 @@
 .ag-checkout-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(255, 94, 0, 0.35);
+}
+
+.ag-checkout-btn:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
+.ag-checkout-qr {
+  margin: 20px 0;
+}
+
+.ag-checkout-qr img {
+  display: block;
+  width: 220px;
+  height: 220px;
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  background: #ffffff;
 }
 
 .ag-checkout-status {

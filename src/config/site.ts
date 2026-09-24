@@ -1,6 +1,6 @@
 export const site = {
   name: "Agent Mart AI",
-  legalName: "Agent Mart AI",
+  legalName: "KANIKA ENTERPRISES",
   domain: "agentmart-ai.com",
   url: "https://agentmart-ai.com",
   title: "Agent Mart AI — Intelligent Agents, Tools, and Automation",
@@ -12,17 +12,14 @@ export const site = {
     "Agent Mart AI helps teams discover intelligent agents, automate workflows, and scale campaigns with expert, technology-focused solutions.",
   contact: {
     email: "info@agentmart-ai.com",
+    phone: "9820962332",
+    phoneHref: "tel:+919820962332",
   },
   locations: [
     {
-      label: "USA Branch",
+      label: "Registered office",
       address:
-        "701 Tillery Street, Unit 12, 2690 Austin, Texas, USA, 78702.",
-    },
-    {
-      label: "Hong Kong Branch",
-      address:
-        "Office Unit B on 9/F Thomson Commercial Building, Wan Chai, Hong Kong, 999077.",
+        "Mahadev Smruti Bungalow, Old Mumbai Pune Road, Kalwa West, Thane, Maharashtra – 400605.",
     },
   ],
 } as const;
